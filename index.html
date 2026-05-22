@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Nuora Gut Ritual Offer Concept v2</title>
+<title>Nuora Gut Ritual Offer Concept v3</title>
 <style>
   :root{
     --bg:#f7eee8;
@@ -34,28 +34,28 @@
   .hero{position:relative;z-index:1;padding:18px 18px 8px}
   .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:800;color:#6f3b39;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px;box-shadow:0 8px 24px rgba(66,30,28,.06)}
   .dot{width:7px;height:7px;border-radius:50%;background:#df9a76;box-shadow:0 0 0 4px rgba(223,154,118,.15)}
-  h1{font-size:43px;line-height:.91;letter-spacing:-.085em;margin:16px 0 10px;font-weight:800;color:#221312}
-  .lead{font-size:16px;line-height:1.35;letter-spacing:-.02em;color:#604945;margin:0;max-width:330px}
-  .stage{height:250px;margin:18px 0 4px;position:relative;border-radius:34px;background:linear-gradient(160deg,#fffdf9 0%,#fdeee7 100%);box-shadow:var(--shadow);border:1px solid rgba(91,45,42,.1);overflow:hidden}
-  .stage:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:radial-gradient(circle,#f5cfc6 0,#f5cfc6 39%,transparent 40%);right:-68px;top:-44px;opacity:.75}
-  .stage:after{content:"";position:absolute;inset:auto 18px 16px;height:32px;border-radius:50%;background:rgba(92,42,38,.14);filter:blur(14px)}
-  .bottle{position:absolute;right:22px;top:30px;width:190px;height:190px;object-fit:contain;filter:drop-shadow(0 28px 24px rgba(65,25,23,.27));z-index:2;transition:transform .5s cubic-bezier(.2,.9,.2,1)}
+  h1{font-size:38px;line-height:.96;letter-spacing:-.052em;margin:14px 0 9px;font-weight:800;color:#221312;max-width:365px}
+  .lead{font-size:15.5px;line-height:1.34;letter-spacing:-.02em;color:#604945;margin:0;max-width:335px}
+  .stage{height:232px;margin:16px 0 2px;position:relative;border-radius:34px;background:radial-gradient(circle at 72% 34%,rgba(245,207,198,.9),transparent 36%),linear-gradient(160deg,#fffdf9 0%,#fdeee7 100%);box-shadow:var(--shadow);border:1px solid rgba(91,45,42,.1);overflow:hidden}
+  .stage:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.55) 0,rgba(245,207,198,.58) 42%,transparent 68%);right:-48px;top:-38px;opacity:.95}
+  .stage:after{content:"";position:absolute;right:13px;top:19px;width:205px;height:205px;border-radius:42px;background:linear-gradient(135deg,rgba(255,250,245,.24),rgba(247,238,232,.12));box-shadow:inset 0 0 55px rgba(255,250,245,.38);pointer-events:none;z-index:3;mix-blend-mode:soft-light}
+  .bottle{position:absolute;right:18px;top:24px;width:188px;height:188px;object-fit:contain;filter:drop-shadow(0 28px 24px rgba(65,25,23,.25)) saturate(1.02);mix-blend-mode:multiply;border-radius:42px;opacity:.96;-webkit-mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 62%,rgba(0,0,0,.82) 78%,transparent 100%);mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 62%,rgba(0,0,0,.82) 78%,transparent 100%);z-index:2;transition:transform .5s cubic-bezier(.2,.9,.2,1)}
   .device.plan-90 .bottle{transform:translateX(-8px) scale(.88)}
   .bottle.second,.bottle.third{opacity:0;transform:translateX(42px) scale(.72);transition:.45s cubic-bezier(.2,.9,.2,1)}
   .device.plan-90 .bottle.second{opacity:1;transform:translateX(-55px) scale(.74);filter:drop-shadow(0 22px 18px rgba(65,25,23,.2))}
   .device.plan-90 .bottle.third{opacity:1;transform:translateX(-100px) scale(.62);filter:drop-shadow(0 18px 16px rgba(65,25,23,.16))}
-  .stage-copy{position:absolute;left:17px;top:17px;width:155px;z-index:3}
+  .stage-copy{position:absolute;left:17px;top:17px;width:150px;z-index:4}
   .stage-copy b{font-size:13px;display:block;letter-spacing:-.02em;color:#4e2525}
   .stage-copy span{font-size:11.5px;line-height:1.3;color:#765d58;display:block;margin-top:6px}
-  .floating{position:absolute;left:17px;bottom:16px;z-index:4;display:flex;gap:7px;flex-wrap:wrap;width:180px}
-  .chip{font-size:10.5px;font-weight:800;color:#51302e;background:rgba(255,255,255,.82);border:1px solid rgba(91,45,42,.12);border-radius:999px;padding:7px 9px;box-shadow:0 7px 18px rgba(66,30,28,.08)}
+  .floating{position:absolute;left:17px;bottom:15px;z-index:4;display:flex;gap:6px;flex-wrap:wrap;width:172px}
+  .chip{font-size:10px;font-weight:800;color:#51302e;background:rgba(255,255,255,.76);border:1px solid rgba(91,45,42,.1);border-radius:999px;padding:6px 8px;box-shadow:0 7px 18px rgba(66,30,28,.06)}
   .panel{position:relative;z-index:2;padding:11px 18px 122px}
-  .offer-card{background:rgba(255,252,248,.9);border:1px solid rgba(91,45,42,.12);border-radius:32px;box-shadow:var(--shadow);padding:15px;overflow:hidden}
+  .offer-card{background:rgba(255,252,248,.92);border:1px solid rgba(91,45,42,.12);border-radius:30px;box-shadow:var(--shadow);padding:14px;overflow:hidden}
   .title-row{display:flex;align-items:flex-end;justify-content:space-between;margin:0 2px 13px}
   h2{font-size:20px;line-height:1;margin:0;letter-spacing:-.055em}
   .save{font-size:11px;color:#8a645d;font-weight:750}
   .plans{display:grid;gap:8px}
-  .plan{border:1px solid rgba(91,45,42,.13);border-radius:22px;background:#fff;min-height:70px;padding:11px;display:grid;grid-template-columns:22px 1fr auto;gap:9px;align-items:center;cursor:pointer;position:relative;transition:.25s ease;box-shadow:0 8px 18px rgba(66,30,28,.04)}
+  .plan{border:1px solid rgba(91,45,42,.13);border-radius:21px;background:#fff;min-height:66px;padding:10px;display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;cursor:pointer;position:relative;transition:.25s ease;box-shadow:0 8px 18px rgba(66,30,28,.04)}
   .plan:hover{transform:translateY(-1px)}
   .plan.active{border-color:rgba(95,34,37,.72);background:linear-gradient(180deg,#fff,#fff4ed);box-shadow:0 13px 32px rgba(95,34,37,.14)}
   .radio{width:21px;height:21px;border-radius:50%;border:1.5px solid rgba(91,45,42,.28);display:grid;place-items:center;background:#fff}
@@ -75,7 +75,7 @@
   .controls{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;min-width:108px}
   .control{font-size:9.8px;font-weight:850;color:#426046;background:#edf5ec;border:1px solid rgba(70,104,77,.14);border-radius:999px;padding:5px 7px;white-space:nowrap}
   .plan.active .drawer{grid-template-rows:1fr}
-  .summary{margin:13px 0 0;border-radius:22px;background:linear-gradient(180deg,#f9ece5,#fff8f2);border:1px solid rgba(91,45,42,.11);padding:12px}
+  .summary{margin:11px 0 0;border-radius:21px;background:linear-gradient(180deg,#f9ece5,#fff8f2);border:1px solid rgba(91,45,42,.11);padding:11px}
   .summary-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
   .summary-copy b{font-size:14px;letter-spacing:-.035em;display:block}
   .summary-copy span{font-size:11.5px;color:#715a56;display:block;margin-top:3px}
@@ -86,16 +86,16 @@
   .cta:active{transform:scale(.985)}
   .under-cta{display:flex;justify-content:center;gap:10px;margin-top:9px;color:#755d59;font-size:10.8px;font-weight:700;flex-wrap:wrap}
   .under-cta span:before{content:"✓ ";color:#55745b}
-  .ritual-meter{margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+  .ritual-meter{margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
   .meter{background:#fff;border:1px solid rgba(91,45,42,.1);border-radius:17px;padding:10px 8px;min-height:72px;transition:.25s ease}
   .meter.active{background:#fff4ed;border-color:rgba(95,34,37,.22)}
   .meter small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#946f68;font-weight:850;margin-bottom:5px}
   .meter b{font-size:12.5px;line-height:1.15;letter-spacing:-.025em;display:block}
-  .proof-strip{margin-top:14px;border-radius:24px;background:#2b1918;color:#fff;padding:14px;position:relative;overflow:hidden}
+  .proof-strip{margin-top:12px;border-radius:24px;background:linear-gradient(145deg,#2b1918,#432120);color:#fff;padding:14px;position:relative;overflow:hidden}
   .proof-strip:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:rgba(242,215,207,.12);right:-80px;top:-80px}
-  .proof-strip b{display:block;font-size:15px;letter-spacing:-.035em;margin-bottom:4px}
-  .proof-strip p{margin:0;color:#dac8c1;font-size:12px;line-height:1.35;max-width:300px}
-  .mini-nav{margin-top:10px;display:flex;gap:8px;overflow:auto;padding-bottom:2px;scrollbar-width:none}
+  .proof-strip b{display:block;font-size:17px;line-height:1.05;letter-spacing:-.045em;margin-bottom:6px;max-width:270px}
+  .proof-strip p{margin:0;color:#ead9d3;font-size:12.4px;line-height:1.34;max-width:305px}
+  .mini-nav{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap;padding-bottom:2px}
   .mini-nav::-webkit-scrollbar{display:none}
   .mini-pill{flex:0 0 auto;border:1px solid rgba(255,255,255,.14);color:#fff;background:rgba(255,255,255,.07);border-radius:999px;padding:8px 10px;font-size:10.5px;font-weight:800}
   .sticky{position:fixed;left:50%;bottom:0;transform:translateX(-50%) translateY(115%);opacity:0;pointer-events:none;width:min(100%,430px);z-index:30;padding:10px 13px calc(10px + env(safe-area-inset-bottom));background:rgba(255,250,245,.88);backdrop-filter:blur(20px) saturate(155%);border-top:1px solid rgba(91,45,42,.1);display:grid;grid-template-columns:1fr 132px;gap:10px;align-items:center;transition:.28s cubic-bezier(.2,.9,.2,1)}
@@ -114,14 +114,14 @@
   </header>
 
   <section class="hero">
-    <div class="eyebrow"><span class="dot"></span> daily gut ritual, 28-day supply</div>
-    <h1>feel lighter before the bottle runs out.</h1>
-    <p class="lead">Start with one bottle. Keep the ritual going only if it feels worth keeping.</p>
+    <div class="eyebrow"><span class="dot"></span> feel lighter in 28 days</div>
+    <h1>feel lighter, calmer, less bloated.</h1>
+    <p class="lead">Start with one bottle for $39. If your body feels better, your next bottle arrives before you run out.</p>
 
     <div class="stage">
       <div class="stage-copy">
         <b id="stageTitle">1 Bottle Monthly Ritual</b>
-        <span id="stageSub">Designed as the lowest-friction first step.</span>
+        <span id="stageSub">Start gently, then keep what works.</span>
       </div>
       <img class="bottle third" src="https://mynuora.com/cdn/shop/files/a124e4db-a03a-440b-ab6d-1291ea14c3c6.png?v=1773606982" alt="Nuora Gut Ritual third bottle">
       <img class="bottle second" src="https://mynuora.com/cdn/shop/files/a124e4db-a03a-440b-ab6d-1291ea14c3c6.png?v=1773606982" alt="Nuora Gut Ritual second bottle">
@@ -129,7 +129,7 @@
       <div class="floating">
         <span class="chip">60-day guarantee</span>
         <span class="chip">ships fast</span>
-        <span class="chip">no commitment feeling</span>
+        <span class="chip">gentle daily ritual</span>
       </div>
     </div>
   </section>
@@ -137,27 +137,27 @@
   <section class="panel">
     <div class="offer-card">
       <div class="title-row">
-        <h2>choose your start</h2>
+        <h2>choose your first step</h2>
         <div class="save" id="saveText">save $25 today</div>
       </div>
 
       <div class="plans" id="plans">
-        <div class="plan active" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Designed as the lowest-friction first step." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · member refills adjustable anytime">
+        <div class="plan active" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Start gently, then keep what works." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · member refills adjustable anytime">
           <div class="radio"></div>
           <div>
             <div class="plan-name">1 Bottle Monthly Ritual <span class="badge">best first step</span></div>
-            <div class="plan-sub">28-day supply with member pricing after bottle one</div>
+            <div class="plan-sub">28-day supply, member pricing after bottle one</div>
           </div>
           <div class="price"><b>$39</b><span>$64</span></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>After bottle one:</strong> $57 refills, timed so she does not run out.</div>
+              <div class="quiet"><strong>After bottle one:</strong> $57 refills, timed before you run out.</div>
               <div class="controls"><span class="control">instant skip</span><span class="control">instant cancel</span></div>
             </div>
           </div></div>
         </div>
 
-        <div class="plan" data-plan="reset" data-title="90-Day Reset" data-sub="For women who already know they want the full reset window." data-price="$102" data-cta="ADD TO CART · $102 TODAY" data-save="best bottle value" data-sticky="$102 today · $34 per bottle">
+        <div class="plan" data-plan="reset" data-title="90-Day Reset" data-sub="For when you want the full reset window from day one." data-price="$102" data-cta="ADD TO CART · $102 TODAY" data-save="best bottle value" data-sticky="$102 today · $34 per bottle">
           <div class="radio"></div>
           <div>
             <div class="plan-name">90-Day Reset</div>
@@ -176,12 +176,12 @@
           <div class="radio"></div>
           <div>
             <div class="plan-name">Buy Once</div>
-            <div class="plan-sub">No refill pricing, no ongoing ritual setup</div>
+            <div class="plan-sub">One bottle, no member pricing setup</div>
           </div>
           <div class="price"><b>$64</b></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>Simple one-time order.</strong> Best if she only wants to try one bottle.</div>
+              <div class="quiet"><strong>Simple one-time order.</strong> Best if you only want one bottle.</div>
             </div>
           </div></div>
         </div>
@@ -189,7 +189,7 @@
 
       <div class="summary">
         <div class="summary-top">
-          <div class="summary-copy"><b id="summaryTitle">1 Bottle Monthly Ritual</b><span id="summarySub">Start low. Keep control. Build the habit.</span></div>
+          <div class="summary-copy"><b id="summaryTitle">1 Bottle Monthly Ritual</b><span id="summarySub">Start gently. Stay in control.</span></div>
           <div class="summary-price"><b id="summaryPrice">$39</b><span>today</span></div>
         </div>
         <button class="cta" id="cta">ADD TO CART · $39 TODAY</button>
@@ -197,23 +197,23 @@
       </div>
 
       <div class="ritual-meter">
-        <div class="meter active"><small>week 1</small><b>notice lighter digestion signals</b></div>
-        <div class="meter"><small>week 3</small><b>bottle nearly done, decide by feel</b></div>
-        <div class="meter"><small>month 2</small><b>ritual continues without restart friction</b></div>
+        <div class="meter active"><small>week 1</small><b>notice less bloat and heaviness</b></div>
+        <div class="meter"><small>week 3</small><b>decide by how your body feels</b></div>
+        <div class="meter"><small>month 2</small><b>your next bottle is already handled</b></div>
       </div>
     </div>
 
     <div class="proof-strip">
-      <b>the psychology is control, not commitment.</b>
-      <p>The customer sees a cheaper first step, a clear ritual, and quiet control language. The refill is transparent, but it is not the loudest thing on the screen.</p>
+      <b>Start gently. Keep what works.</b>
+      <p>Try your first bottle for $39. If it helps, your next refill arrives before you run out, and you can skip or cancel anytime.</p>
       <div class="mini-nav">
         <div class="mini-pill">member pricing</div>
         <div class="mini-pill">instant cancel</div>
-        <div class="mini-pill">refill before empty</div>
-        <div class="mini-pill">risk reversal</div>
+        <div class="mini-pill">refill before you run out</div>
+        <div class="mini-pill">60-day guarantee</div>
       </div>
     </div>
-    <p class="fine">prototype for offer structure only. mock pricing and UX copy for internal review.</p>
+    <p class="fine">mockup only. final PDP would connect this to checkout, real variants, and compliance copy.</p>
   </section>
 
   <div class="sticky">
@@ -247,7 +247,7 @@ function selectPlan(card){
   cta.textContent=d.cta;
   stickyTitle.textContent=d.title;
   stickySub.textContent=d.sticky;
-  summarySub.textContent=d.plan==='once'?'Straight purchase, no refill setup.':d.plan==='reset'?'Full reset window, still fully manageable.':'Start low. Keep control. Build the habit.';
+  summarySub.textContent=d.plan==='once'?'One bottle, no refill setup.':d.plan==='reset'?'Full reset window, still fully manageable.':'Start gently. Stay in control.';
   meters.forEach((m,i)=>m.classList.toggle('active',d.plan==='reset'||i===0));
 }
 plans.forEach(card=>card.addEventListener('click',()=>selectPlan(card)));
