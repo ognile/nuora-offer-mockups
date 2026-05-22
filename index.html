@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Nuora Gut Ritual Offer Concept v3</title>
+<title>Nuora Gut Ritual Offer Concept v4</title>
 <style>
   :root{
     --bg:#f7eee8;
@@ -31,12 +31,12 @@
   header{position:sticky;top:0;z-index:20;height:50px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:rgba(255,250,245,.74);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid rgba(91,45,42,.08)}
   .logo{font-family:Georgia,serif;font-weight:700;font-size:24px;letter-spacing:-.03em;color:#461b1d}
   .header-proof{font-size:11px;color:#6c504c;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-weight:700;box-shadow:0 8px 22px rgba(66,30,28,.06)}
-  .hero{position:relative;z-index:1;padding:18px 18px 8px}
+  .hero{position:relative;z-index:1;padding:16px 18px 6px}
   .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:800;color:#6f3b39;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px;box-shadow:0 8px 24px rgba(66,30,28,.06)}
   .dot{width:7px;height:7px;border-radius:50%;background:#df9a76;box-shadow:0 0 0 4px rgba(223,154,118,.15)}
-  h1{font-size:38px;line-height:.96;letter-spacing:-.052em;margin:14px 0 9px;font-weight:800;color:#221312;max-width:365px}
-  .lead{font-size:15.5px;line-height:1.34;letter-spacing:-.02em;color:#604945;margin:0;max-width:335px}
-  .stage{height:232px;margin:16px 0 2px;position:relative;border-radius:34px;background:radial-gradient(circle at 72% 34%,rgba(245,207,198,.9),transparent 36%),linear-gradient(160deg,#fffdf9 0%,#fdeee7 100%);box-shadow:var(--shadow);border:1px solid rgba(91,45,42,.1);overflow:hidden}
+  h1{font-size:33px;line-height:1.02;letter-spacing:-.032em;margin:13px 0 9px;font-weight:850;color:#221312;max-width:365px}
+  .lead{font-size:14.5px;line-height:1.35;letter-spacing:-.018em;color:#604945;margin:0;max-width:350px}
+  .stage{height:220px;margin:14px 0 2px;position:relative;border-radius:34px;background:radial-gradient(circle at 72% 34%,rgba(245,207,198,.9),transparent 36%),linear-gradient(160deg,#fffdf9 0%,#fdeee7 100%);box-shadow:var(--shadow);border:1px solid rgba(91,45,42,.1);overflow:hidden}
   .stage:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.55) 0,rgba(245,207,198,.58) 42%,transparent 68%);right:-48px;top:-38px;opacity:.95}
   .stage:after{content:"";position:absolute;right:13px;top:19px;width:205px;height:205px;border-radius:42px;background:linear-gradient(135deg,rgba(255,250,245,.24),rgba(247,238,232,.12));box-shadow:inset 0 0 55px rgba(255,250,245,.38);pointer-events:none;z-index:3;mix-blend-mode:soft-light}
   .bottle{position:absolute;right:18px;top:24px;width:188px;height:188px;object-fit:contain;filter:drop-shadow(0 28px 24px rgba(65,25,23,.25)) saturate(1.02);mix-blend-mode:multiply;border-radius:42px;opacity:.96;-webkit-mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 62%,rgba(0,0,0,.82) 78%,transparent 100%);mask-image:radial-gradient(ellipse 62% 64% at 50% 50%,#000 62%,rgba(0,0,0,.82) 78%,transparent 100%);z-index:2;transition:transform .5s cubic-bezier(.2,.9,.2,1)}
@@ -49,33 +49,33 @@
   .stage-copy span{font-size:11.5px;line-height:1.3;color:#765d58;display:block;margin-top:6px}
   .floating{position:absolute;left:17px;bottom:15px;z-index:4;display:flex;gap:6px;flex-wrap:wrap;width:172px}
   .chip{font-size:10px;font-weight:800;color:#51302e;background:rgba(255,255,255,.76);border:1px solid rgba(91,45,42,.1);border-radius:999px;padding:6px 8px;box-shadow:0 7px 18px rgba(66,30,28,.06)}
-  .panel{position:relative;z-index:2;padding:11px 18px 122px}
+  .panel{position:relative;z-index:2;padding:8px 18px 122px}
   .offer-card{background:rgba(255,252,248,.92);border:1px solid rgba(91,45,42,.12);border-radius:30px;box-shadow:var(--shadow);padding:14px;overflow:hidden}
-  .title-row{display:flex;align-items:flex-end;justify-content:space-between;margin:0 2px 13px}
-  h2{font-size:20px;line-height:1;margin:0;letter-spacing:-.055em}
+  .title-row{display:flex;align-items:flex-end;justify-content:space-between;margin:0 2px 10px}
+  h2{font-size:18px;line-height:1;margin:0;letter-spacing:-.045em}
   .save{font-size:11px;color:#8a645d;font-weight:750}
-  .plans{display:grid;gap:8px}
+  .plans{display:grid;gap:7px}
   .plan{border:1px solid rgba(91,45,42,.13);border-radius:21px;background:#fff;min-height:66px;padding:10px;display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;cursor:pointer;position:relative;transition:.25s ease;box-shadow:0 8px 18px rgba(66,30,28,.04)}
   .plan:hover{transform:translateY(-1px)}
   .plan.active{border-color:rgba(95,34,37,.72);background:linear-gradient(180deg,#fff,#fff4ed);box-shadow:0 13px 32px rgba(95,34,37,.14)}
   .radio{width:21px;height:21px;border-radius:50%;border:1.5px solid rgba(91,45,42,.28);display:grid;place-items:center;background:#fff}
   .active .radio{border-color:var(--wine)}
   .active .radio:after{content:"";width:10px;height:10px;border-radius:50%;background:var(--wine)}
-  .plan-name{font-size:14.5px;font-weight:850;letter-spacing:-.035em;color:#2c1918;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .plan-name{font-size:14px;font-weight:850;letter-spacing:-.03em;color:#2c1918;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
   .badge{font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;background:#5f2225;color:#fff;border-radius:999px;padding:4px 7px;font-weight:850}
-  .plan-sub{font-size:11.5px;color:#79615d;margin-top:3px;line-height:1.23;max-width:185px}
+  .plan-sub{font-size:11px;color:#79615d;margin-top:3px;line-height:1.22;max-width:190px}
   .price{text-align:right;line-height:1}
-  .price b{font-size:23px;letter-spacing:-.075em;display:block;color:#231312}
+  .price b{font-size:22px;letter-spacing:-.065em;display:block;color:#231312}
   .price span{font-size:10.5px;color:#9b827c;text-decoration:line-through;font-weight:700}
   .drawer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease;margin-left:31px;grid-column:2/4}
   .drawer-inner{overflow:hidden}
-  .drawer-line{margin-top:8px;padding-top:9px;border-top:1px solid rgba(91,45,42,.11);display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .drawer-line{margin-top:7px;padding-top:8px;border-top:1px solid rgba(91,45,42,.11);display:flex;align-items:center;justify-content:space-between;gap:10px}
   .quiet{font-size:11.5px;color:#68504c;line-height:1.28}
   .quiet strong{color:#2f1b1a;font-weight:850}
   .controls{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;min-width:108px}
   .control{font-size:9.8px;font-weight:850;color:#426046;background:#edf5ec;border:1px solid rgba(70,104,77,.14);border-radius:999px;padding:5px 7px;white-space:nowrap}
   .plan.active .drawer{grid-template-rows:1fr}
-  .summary{margin:11px 0 0;border-radius:21px;background:linear-gradient(180deg,#f9ece5,#fff8f2);border:1px solid rgba(91,45,42,.11);padding:11px}
+  .summary{margin:10px 0 0;border-radius:21px;background:linear-gradient(180deg,#f9ece5,#fff8f2);border:1px solid rgba(91,45,42,.11);padding:11px}
   .summary-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
   .summary-copy b{font-size:14px;letter-spacing:-.035em;display:block}
   .summary-copy span{font-size:11.5px;color:#715a56;display:block;margin-top:3px}
@@ -93,7 +93,7 @@
   .meter b{font-size:12.5px;line-height:1.15;letter-spacing:-.025em;display:block}
   .proof-strip{margin-top:12px;border-radius:24px;background:linear-gradient(145deg,#2b1918,#432120);color:#fff;padding:14px;position:relative;overflow:hidden}
   .proof-strip:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:rgba(242,215,207,.12);right:-80px;top:-80px}
-  .proof-strip b{display:block;font-size:17px;line-height:1.05;letter-spacing:-.045em;margin-bottom:6px;max-width:270px}
+  .proof-strip b{display:block;font-size:16px;line-height:1.08;letter-spacing:-.04em;margin-bottom:6px;max-width:280px}
   .proof-strip p{margin:0;color:#ead9d3;font-size:12.4px;line-height:1.34;max-width:305px}
   .mini-nav{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap;padding-bottom:2px}
   .mini-nav::-webkit-scrollbar{display:none}
@@ -106,7 +106,7 @@
 </style>
 </head>
 <body>
-<main class="device plan-monthly" id="app">
+<main class="device plan-90" id="app">
   <div class="ambient"></div>
   <header>
     <div class="logo">Nuora</div>
@@ -114,22 +114,22 @@
   </header>
 
   <section class="hero">
-    <div class="eyebrow"><span class="dot"></span> feel lighter in 28 days</div>
-    <h1>feel lighter, calmer, less bloated.</h1>
-    <p class="lead">Start with one bottle for $39. If your body feels better, your next bottle arrives before you run out.</p>
+    <div class="eyebrow"><span class="dot"></span> daily gut support, 28-day bottle</div>
+    <h1>daily gut support for bloating, digestion, and regularity.</h1>
+    <p class="lead">Probiotics, prebiotics, digestive enzymes, and gut biofilm support in one simple ritual.</p>
 
     <div class="stage">
       <div class="stage-copy">
-        <b id="stageTitle">1 Bottle Monthly Ritual</b>
-        <span id="stageSub">Start gently, then keep what works.</span>
+        <b id="stageTitle">90-Day Gut Reset</b>
+        <span id="stageSub">3 bottles for the full reset window.</span>
       </div>
       <img class="bottle third" src="https://mynuora.com/cdn/shop/files/a124e4db-a03a-440b-ab6d-1291ea14c3c6.png?v=1773606982" alt="Nuora Gut Ritual third bottle">
       <img class="bottle second" src="https://mynuora.com/cdn/shop/files/a124e4db-a03a-440b-ab6d-1291ea14c3c6.png?v=1773606982" alt="Nuora Gut Ritual second bottle">
       <img class="bottle" src="https://mynuora.com/cdn/shop/files/a124e4db-a03a-440b-ab6d-1291ea14c3c6.png?v=1773606982" alt="Nuora Gut Ritual bottle">
       <div class="floating">
         <span class="chip">60-day guarantee</span>
-        <span class="chip">ships fast</span>
-        <span class="chip">gentle daily ritual</span>
+        <span class="chip">lab tested</span>
+        <span class="chip">no proprietary blends</span>
       </div>
     </div>
   </section>
@@ -137,46 +137,46 @@
   <section class="panel">
     <div class="offer-card">
       <div class="title-row">
-        <h2>choose your first step</h2>
-        <div class="save" id="saveText">save $25 today</div>
+        <h2>choose your supply</h2>
+        <div class="save" id="saveText">best value</div>
       </div>
 
       <div class="plans" id="plans">
-        <div class="plan active" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Start gently, then keep what works." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · member refills adjustable anytime">
+        <div class="plan" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Simple daily support, delivered monthly." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · monthly delivery">
           <div class="radio"></div>
           <div>
-            <div class="plan-name">1 Bottle Monthly Ritual <span class="badge">best first step</span></div>
-            <div class="plan-sub">28-day supply, member pricing after bottle one</div>
+            <div class="plan-name">1 Bottle Monthly</div>
+            <div class="plan-sub">28-day supply, best if you want to start small</div>
           </div>
           <div class="price"><b>$39</b><span>$64</span></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>After bottle one:</strong> $57 refills, timed before you run out.</div>
-              <div class="controls"><span class="control">instant skip</span><span class="control">instant cancel</span></div>
+              <div class="quiet"><strong>Simple rhythm:</strong> one bottle every 28 days.</div>
+              <div class="controls"><span class="control">free shipping</span><span class="control">portal control</span></div>
             </div>
           </div></div>
         </div>
 
-        <div class="plan" data-plan="reset" data-title="90-Day Reset" data-sub="For when you want the full reset window from day one." data-price="$102" data-cta="ADD TO CART · $102 TODAY" data-save="best bottle value" data-sticky="$102 today · $34 per bottle">
+        <div class="plan active" data-plan="reset" data-title="90-Day Gut Reset" data-sub="The cleanest way to run the full protocol." data-price="$102" data-cta="START 90-DAY RESET · $102" data-save="best value" data-sticky="$102 today · $1.21/day">
           <div class="radio"></div>
           <div>
-            <div class="plan-name">90-Day Reset</div>
-            <div class="plan-sub">3 bottles, full protocol window, lowest first price per bottle</div>
+            <div class="plan-name">90-Day Gut Reset <span class="badge">best value</span></div>
+            <div class="plan-sub">3 bottles for the full reset window</div>
           </div>
           <div class="price"><b>$102</b><span>$192</span></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>Member set:</strong> $147 every 84 days, fully adjustable.</div>
-              <div class="controls"><span class="control">skip</span><span class="control">cancel</span></div>
+              <div class="quiet"><strong>Why 90 days:</strong> consistency gives your gut time to adapt, so results are easier to evaluate.</div>
+              <div class="controls"><span class="control">$1.21/day</span><span class="control">free shipping</span></div>
             </div>
           </div></div>
         </div>
 
-        <div class="plan" data-plan="once" data-title="Buy Once" data-sub="One bottle, no member refill pricing." data-price="$64" data-cta="ADD TO CART · $64" data-save="one-time purchase" data-sticky="$64 one-time purchase">
+        <div class="plan" data-plan="once" data-title="Buy Once" data-sub="Single bottle purchase." data-price="$64" data-cta="ADD TO CART · $64" data-save="one-time purchase" data-sticky="$64 single bottle purchase">
           <div class="radio"></div>
           <div>
             <div class="plan-name">Buy Once</div>
-            <div class="plan-sub">One bottle, no member pricing setup</div>
+            <div class="plan-sub">Single bottle purchase</div>
           </div>
           <div class="price"><b>$64</b></div>
           <div class="drawer"><div class="drawer-inner">
@@ -189,36 +189,35 @@
 
       <div class="summary">
         <div class="summary-top">
-          <div class="summary-copy"><b id="summaryTitle">1 Bottle Monthly Ritual</b><span id="summarySub">Start gently. Stay in control.</span></div>
-          <div class="summary-price"><b id="summaryPrice">$39</b><span>today</span></div>
+          <div class="summary-copy"><b id="summaryTitle">90-Day Gut Reset</b><span id="summarySub">Full 90-day window. Lowest daily price.</span></div>
+          <div class="summary-price"><b id="summaryPrice">$102</b><span>today</span></div>
         </div>
-        <button class="cta" id="cta">ADD TO CART · $39 TODAY</button>
-        <div class="under-cta" id="underCta"><span>instant cancel</span><span>instant skip</span><span>60-day guarantee</span></div>
+        <button class="cta" id="cta">START 90-DAY RESET · $102</button>
+        <div class="under-cta" id="underCta"><span>60-day guarantee</span><span>free shipping</span><span>flexible delivery</span></div>
       </div>
 
       <div class="ritual-meter">
-        <div class="meter active"><small>week 1</small><b>notice less bloat and heaviness</b></div>
-        <div class="meter"><small>week 3</small><b>decide by how your body feels</b></div>
-        <div class="meter"><small>month 2</small><b>your next bottle is already handled</b></div>
+        <div class="meter active"><small>week 1</small><b>support digestion and regularity</b></div>
+        <div class="meter active"><small>week 3</small><b>less end-of-day bloat</b></div>
+        <div class="meter active"><small>month 3</small><b>full window to evaluate results</b></div>
       </div>
     </div>
 
     <div class="proof-strip">
-      <b>Start gently. Keep what works.</b>
-      <p>Try your first bottle for $39. If it helps, your next refill arrives before you run out, and you can skip or cancel anytime.</p>
+      <b>More complete than a probiotic alone.</b>
+      <p>Gut Ritual combines biofilm support, probiotics, prebiotics, and digestive enzymes, so you do not have to stack multiple gut products.</p>
       <div class="mini-nav">
-        <div class="mini-pill">member pricing</div>
-        <div class="mini-pill">instant cancel</div>
-        <div class="mini-pill">refill before you run out</div>
-        <div class="mini-pill">60-day guarantee</div>
+        <div class="mini-pill">biofilm support</div>
+        <div class="mini-pill">probiotics + prebiotics</div>
+        <div class="mini-pill">digestive enzymes</div>
+        <div class="mini-pill">lab tested</div>
       </div>
     </div>
-    <p class="fine">mockup only. final PDP would connect this to checkout, real variants, and compliance copy.</p>
   </section>
 
   <div class="sticky">
-    <div><b id="stickyTitle">1 Bottle Monthly Ritual</b><span id="stickySub">$39 today · member refills adjustable anytime</span></div>
-    <button id="stickyBtn">Start ritual</button>
+    <div><b id="stickyTitle">90-Day Gut Reset</b><span id="stickySub">$102 today · $1.21/day</span></div>
+    <button id="stickyBtn">Start reset</button>
   </div>
 </main>
 <script>
@@ -247,7 +246,7 @@ function selectPlan(card){
   cta.textContent=d.cta;
   stickyTitle.textContent=d.title;
   stickySub.textContent=d.sticky;
-  summarySub.textContent=d.plan==='once'?'One bottle, no refill setup.':d.plan==='reset'?'Full reset window, still fully manageable.':'Start gently. Stay in control.';
+  summarySub.textContent=d.plan==='once'?'Single bottle purchase.':d.plan==='reset'?'Full 90-day window. Lowest daily price.':'Simple daily support, delivered monthly.';
   meters.forEach((m,i)=>m.classList.toggle('active',d.plan==='reset'||i===0));
 }
 plans.forEach(card=>card.addEventListener('click',()=>selectPlan(card)));
