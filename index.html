@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Nuora Gut Ritual Offer Concept v4</title>
+<title>Nuora Gut Ritual Offer Concept v5</title>
 <style>
   :root{
     --bg:#f7eee8;
@@ -142,7 +142,7 @@
       </div>
 
       <div class="plans" id="plans">
-        <div class="plan" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Simple daily support, delivered monthly." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · monthly delivery">
+        <div class="plan" data-plan="monthly" data-title="1 Bottle Monthly Ritual" data-sub="Simple daily support, delivered monthly." data-price="$39" data-cta="ADD TO CART · $39 TODAY" data-save="save $25 today" data-sticky="$39 today · then $57 every 28 days">
           <div class="radio"></div>
           <div>
             <div class="plan-name">1 Bottle Monthly</div>
@@ -151,13 +151,13 @@
           <div class="price"><b>$39</b><span>$64</span></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>Simple rhythm:</strong> one bottle every 28 days.</div>
+              <div class="quiet"><strong>Today:</strong> $39 first bottle. <strong>Then:</strong> $57 every 28 days.</div>
               <div class="controls"><span class="control">free shipping</span><span class="control">portal control</span></div>
             </div>
           </div></div>
         </div>
 
-        <div class="plan active" data-plan="reset" data-title="90-Day Gut Reset" data-sub="The cleanest way to run the full protocol." data-price="$102" data-cta="START 90-DAY RESET · $102" data-save="best value" data-sticky="$102 today · $1.21/day">
+        <div class="plan active" data-plan="reset" data-title="90-Day Gut Reset" data-sub="The cleanest way to run the full protocol." data-price="$102" data-cta="START 90-DAY RESET · $102" data-save="best value" data-sticky="$102 today · then $147 every 84 days">
           <div class="radio"></div>
           <div>
             <div class="plan-name">90-Day Gut Reset <span class="badge">best value</span></div>
@@ -166,7 +166,7 @@
           <div class="price"><b>$102</b><span>$192</span></div>
           <div class="drawer"><div class="drawer-inner">
             <div class="drawer-line">
-              <div class="quiet"><strong>Why 90 days:</strong> consistency gives your gut time to adapt, so results are easier to evaluate.</div>
+              <div class="quiet"><strong>Today:</strong> $102 for 3 bottles. <strong>Then:</strong> $147 every 84 days.</div>
               <div class="controls"><span class="control">$1.21/day</span><span class="control">free shipping</span></div>
             </div>
           </div></div>
@@ -189,7 +189,7 @@
 
       <div class="summary">
         <div class="summary-top">
-          <div class="summary-copy"><b id="summaryTitle">90-Day Gut Reset</b><span id="summarySub">Full 90-day window. Lowest daily price.</span></div>
+          <div class="summary-copy"><b id="summaryTitle">90-Day Gut Reset</b><span id="summarySub">Today $102. Then $147 every 84 days.</span></div>
           <div class="summary-price"><b id="summaryPrice">$102</b><span>today</span></div>
         </div>
         <button class="cta" id="cta">START 90-DAY RESET · $102</button>
@@ -216,7 +216,7 @@
   </section>
 
   <div class="sticky">
-    <div><b id="stickyTitle">90-Day Gut Reset</b><span id="stickySub">$102 today · $1.21/day</span></div>
+    <div><b id="stickyTitle">90-Day Gut Reset</b><span id="stickySub">$102 today · then $147 every 84 days</span></div>
     <button id="stickyBtn">Start reset</button>
   </div>
 </main>
@@ -246,7 +246,7 @@ function selectPlan(card){
   cta.textContent=d.cta;
   stickyTitle.textContent=d.title;
   stickySub.textContent=d.sticky;
-  summarySub.textContent=d.plan==='once'?'Single bottle purchase.':d.plan==='reset'?'Full 90-day window. Lowest daily price.':'Simple daily support, delivered monthly.';
+  summarySub.textContent=d.plan==='once'?'Single bottle purchase.':d.plan==='reset'?'Today $102. Then $147 every 84 days.':'Today $39. Then $57 every 28 days.';
   meters.forEach((m,i)=>m.classList.toggle('active',d.plan==='reset'||i===0));
 }
 plans.forEach(card=>card.addEventListener('click',()=>selectPlan(card)));
